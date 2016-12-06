@@ -146,8 +146,12 @@ function getChallenge(isFirst){
 }
 
 function respond() {
-  key = document.getElementById("firstWord").value + document.getElementById("secondWord").value + document.getElementById("thirdWord").value;
-  key = key.toUpperCase();
+  if (document.getElementById("firstWord").value == "") {
+      key = "COMPUTERMOUSTACHEJELLYBOX";
+  } else {
+    key = document.getElementById("firstWord").value + document.getElementById("secondWord").value + document.getElementById("thirdWord").value;
+    key = key.toUpperCase();
+  }
   if(key == "") {
       alert("Please enter words");
       return;
