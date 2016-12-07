@@ -157,11 +157,12 @@ function respond() {
       return;
   }
   document.getElementById("inputBox").removeAttribute("disabled");
-  if (!isEntered) {
+  //if (!isEntered) {
+    //count = findResponseLength(challenge,key);
+    //isEntered = true;
+    //document.getElementById('bt').innerHTML = "Click to verify";
+  //} else {
     count = findResponseLength(challenge,key);
-    isEntered = true;
-    document.getElementById('bt').innerHTML = "Click to verify";
-  } else {
     var uResponse = "";
 
      uResponse +=  document.getElementById(("inputBox")).value;
@@ -178,6 +179,6 @@ function respond() {
       document.getElementById("inputBox").value = cResponse + "aB7!";
     }
 
-  }
+  //}
 
 }
