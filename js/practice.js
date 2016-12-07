@@ -169,7 +169,7 @@ function respond() {
 
     if(uResponse == cResponse + "aB7!") {
         alert("correct");
-        document.getElementById('bt').innerHTML = "Ready?";
+        //document.getElementById('bt').innerHTML = "Ready?";
         document.getElementById('inputBox').value = "";
         count = 0;
         isEntered = false;
