@@ -89,16 +89,19 @@
 
             <h4>Practice on Your Own!</h4>
              <p>Choose three words and enter them below</p>
-            <div class = "col-xs-4">
-                <input type="text" maxlength="10" class="form-control" id="firstWord" placeholder="word1">
+            <div id="enterPhrase" style="display: none">
+                <div class = "col-xs-4">
+                    <input type="text" maxlength="10" class="form-control" id="firstWord" placeholder="word1">
+                </div>
+                <div class = "col-xs-4">
+                    <input type="text" maxlength="10" class="form-control" id="secondWord" placeholder="word2">
+                </div>
+                <div class = "col-xs-4">
+                    <input type="text" maxlength="10" class="form-control" id="thirdWord" placeholder="word3">
+                    <br>
+                </div>
             </div>
-            <div class = "col-xs-4">
-                <input type="text" maxlength="10" class="form-control" id="secondWord" placeholder="word2">
-            </div>
-            <div class = "col-xs-4">
-                <input type="text" maxlength="10" class="form-control" id="thirdWord" placeholder="word3">
-                <br>
-            </div>
+            <button type="submit" class="btn btn-default" onclick="showFields()" id = "phraseBtn">Click to enter your own key!</button>
             <p>Enter your reponse below and make sure to append your string (aB7!) to the end of each response</p>
             <div style="display: inline" id = "challengeDiv"></div>
             <h4 id = "challengeData"></h4>
