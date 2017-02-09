@@ -11,7 +11,7 @@ function getChallenge(isFirst){
     text.innerHTML = "The challenge is <b>" + challenges +"</b>";
     if (isFirst == 1) {
         var prevResponse = document.createElement('P');
-        prevResponse.innerHTML = "The response was <b>" + cResponse + "aB7!</b>";
+        prevResponse.innerHTML = "The response was <b>" + ansRight + "aB7!</b>";
         var prevChallenge = document.getElementById("challengeDiv").innerHTML;
         prevChallenge = prevChallenge.replace("is","was");
         document.getElementById("challengeDiv").innerHTML = prevChallenge;
