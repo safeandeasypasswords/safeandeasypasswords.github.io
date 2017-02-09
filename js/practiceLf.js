@@ -31,6 +31,7 @@ function findAnswer(challenge, key, wildcard) {
     if (a == -1) {
       answer = answer + wildcard;
     } else {
+      a = a + 1;
       answer = answer + a;
     }
   }
@@ -38,7 +39,7 @@ function findAnswer(challenge, key, wildcard) {
 }
 function respond() {
   var key = "DIESTARYOU";
-  var wildcard = 0;
+  var wildcard = 6;
   var ansRight = findAnswer(challenge, key, wildcard);
   ansRight = ansRight + "aB7!";
   var ansUser = document.getElementById("inputBoxLf").value;
