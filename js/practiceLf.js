@@ -33,6 +33,7 @@ function findAnswer(challenge, key, wildcard) {
       answer = answer + wildcard;
     } else {
       a = a + 1;
+      a = a % 10;
       answer = answer + a;
     }
   }
