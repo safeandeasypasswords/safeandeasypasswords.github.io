@@ -60,3 +60,11 @@ function respond() {
       document.getElementById("inputBoxLf").value = ansRight;
     }
 }
+
+function showFields() {
+  btn = document.getElementById("phraseBtn");
+  btn.disabled = true;
+  btn.style.display = "none";
+  txt = document.getElementById("enterPhrase");
+  txt.style.display = "block";
+}
