@@ -109,9 +109,6 @@
                         Choose a random number between 0 and 9. This is going to be your wildcard. <br>
                         e.g. <font color="green">6</font>
                     </li>
-                    <li>
-                        Memorize the ending <font color="green"> aB7! </font><b> This is important to make all of your passwords meet the requriments for different websites</b>
-                    </li>
                 </ol>
                 <h4>Given a website name, e.g., <font color="black">APPLE</font>, generate your password as follows:</h4>
                 <ol>
@@ -119,7 +116,7 @@
                     <li>
                         Find the first occurrence of the letter in  <font color="green">DIE-STAR-YOU</font>
                         and output the corresponding number. This is the first character of your password.
-                        (<font color="black">A --> 6</font>).
+                        (<font color="blue">A --> 6</font>).
                     </li>
                     <li>
                         Move on the the next letter.
@@ -129,7 +126,6 @@
                         <font color="black">P</font> --> <font color="blue">6</font>
                         <br>
                         <font color="black">6</font> + <font color="blue">6</font> = <font color="black">12</font>
-                        <br>
                         <font color="black">12</font> --> <font color="blue">2</font>
                     </li>
                     <!-- If the letter is Y, wrap back to the first word; if the letter doesn't show up in your sequence of words, skip it. </li> -->
@@ -147,32 +143,84 @@
 
             <h4>Practice on Your Own!</h4>
 
-             <p>Choose three words and enter them below</p>
-            <div id="enterPhrase" style="display: none">
-                <div class = "col-xs-4">
-                    <input type="text" maxlength="10" class="form-control" id="firstWord" placeholder="word1">
-                </div>
-                <div class = "col-xs-4">
-                    <input type="text" maxlength="10" class="form-control" id="secondWord" placeholder="word2">
-                </div>
-                <div class = "col-xs-4">
-                    <input type="text" maxlength="10" class="form-control" id="thirdWord" placeholder="word3">
-                    <br>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-default" onclick="showFields()" id = "phraseBtn">Click to enter your own key!</button>
             <p>Enter your reponse below and make sure to append your string (aB7!) to the end of each response</p>
             <div style="display: inline" id = "challengeDiv"></div>
             <h4 id = "challengeData"></h4>
             <h4 id = "keyData"></h4>
-            <div class="row">
+            <div class="row" style = "padding-left: 15px">
                 <input type="text" class="form-control" id="inputBoxLf" placeholder="Enter your reponse here">
             </div>
             <br>
             <button type="submit" class="btn btn-default" onclick="respond()" id = "bt">Click to verify</button>
             <button type="submit" class="btn btn-default" onclick="checker()" id = "btTest">Show me how to generate this password</button>
 
+            <h4> Generate your own key! </h4>
+            <div id="enterPhrase" style="display: none">
+                <ol>
+                    <li>
+                        Choose five consonants. Here is the letter frequency table for your reference.
+                        <br>
+                        <img src="consonant-freq.jpg" alt="Frequency Table" style="width:304px;height:228px;">
+                        <br>
+                        <input type="text" class="form-control" maxlength= "10" placeholder="Enter your choices">
+                    </li>
+                    <li>
+                        Add the vowels (<font color="green"> A E I O U </font> ) and make 2-3 words.
+                        <br>
+                        <div class = "col-xs-4">
+                            <input type="text" maxlength="10" class="form-control" id="firstWord" placeholder="word1">
+                        </div>
+                        <div class = "col-xs-4">
+                            <input type="text" maxlength="10" class="form-control" id="secondWord" placeholder="word2">
+                        </div>
+                        <div class = "col-xs-4">
+                            <input type="text" maxlength="10" class="form-control" id="thirdWord" placeholder="word3">
+                            <br>
+                        </div>
+                    </li>
+                    <li>
+                        Arrange your words and write them continuously.<br>
+                        <input type="text" maxlength="15" class="form-control" id="thirdWord" placeholder="word3">
+                    </li>
+                    <li>
+                        Assign the numbers to your letters
+                        <p><font color="green">
+                            <table id="t01">
+                                <tr>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                    <th><span contenteditable>   </span></th>
+                                </tr>
+                                <tr>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                    <td><span contenteditable>   </span></td>
+                                </tr>
+                            </table>
+                        </font></p>
+                    </li>
+                    <li>
+                        Use this letter to number mapping to answer the challenge above.
+                    </li>
+                </ol>
 
+            </div>
+            <button type="submit" class="btn btn-default" onclick="showFields()" id = "phraseBtn">Click to enter your own key!</button>
+            <br>
         </div><!-- /.container -->
 
         <!-- Bootstrap core JavaScript
