@@ -167,7 +167,7 @@ function respond() {
 
      uResponse +=  document.getElementById(("inputBox")).value;
 
-    if(uResponse == cResponse + "aB7!") {
+    if(uResponse.toUpperCase() == cResponse.toUpperCase() + "AB7!") {
         alert("correct");
         //document.getElementById('bt').innerHTML = "Ready?";
         document.getElementById('inputBox').value = "";
