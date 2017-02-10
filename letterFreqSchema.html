@@ -67,20 +67,20 @@
                         e.g., <p><font color="green">A E I O U</font></p>
                     </li>
                     <li>
-                        Now you have 10 letters 
-                        <p><font color="green"> S T R D Y A E I O U </font></p> 
+                        Now you have 10 letters
+                        <p><font color="green"> S T R D Y A E I O U </font></p>
                     </li>
                     <li>
-                        Make 2-3 words with your letters and arrange them in a letter sequence 
-                        <p><font color="green">DIE-STAR-YOU</font></p> 
+                        Make 2-3 words with your letters
+                        <p><font color="green">DIE-STAR-YOU</font></p>
                     </li>
                     <li>
-                        Assign the numbers 1,2,3....9,0 to your letter sequence 
+                        Assign the numbers 1,2,3....9,0 to your letters
                         <p><font color="green">
                             <table id="t01">
                                 <tr>
                                     <th> D </th>
-                                    <th> I </th> 
+                                    <th> I </th>
                                     <th> E </th>
                                     <th> S </th>
                                     <th> T </th>
@@ -92,7 +92,7 @@
                                 </tr>
                                 <tr>
                                     <td> 1 </td>
-                                    <td> 2 </td> 
+                                    <td> 2 </td>
                                     <td> 3 </td>
                                     <td> 4 </td>
                                     <td> 5 </td>
@@ -106,7 +106,7 @@
                         </font></p>
                     </li>
                     <li>
-                        Choose a random number between 0 and 9. This is going to be your wildcard. <br> 
+                        Choose a random number between 0 and 9. This is going to be your wildcard. <br>
                         e.g. <font color="green">6</font>
                     </li>
                 </ol>
@@ -115,23 +115,28 @@
                     <li>Start at the first letter of <font color="black">APPLE</font>, (<font color="black"> A </font>).</li>
                     <li>
                         Find the first occurrence of the letter in  <font color="green">DIE-STAR-YOU</font>
-                        and output the corresponding number
-                        (<font color="blue">6</font>).
+                        and output the corresponding number. This is the first character of your password.
+                        (<font color="blue">A --> 6</font>).
                     </li>
                     <li>
                         Move on the the next letter.
-                        If the letter is not found in your letter sequence, output the wildcard.
-                        ( <font color="black">P</font> --> <font color="blue">6</font> )
+                        If the letter is not found in your letter sequence, output the wildcard. Add this number to the last number and use this sum as the next character
+                        in your password. If the sum is 10 or more than 10, use the last digit.
+                        <br>
+                        <font color="black">P</font> --> <font color="blue">6</font>
+                        <br>
+                        <font color="black">6</font> + <font color="blue">6</font> = <font color="black">12</font>
+                        <font color="black">12</font> --> <font color="blue">2</font>
                     </li>
                     <!-- If the letter is Y, wrap back to the first word; if the letter doesn't show up in your sequence of words, skip it. </li> -->
                     <li>
                         Repeat on the remaining letters of <font color="black">APPLE</font> till you reach the end.
-                        ( <font color="black">APPLE</font> --> <font color="blue">66663</font> )
+                        ( <font color="black">APPLE</font> --> <font color="blue">62847aB7!</font> )
                     </li>
-                    
+
                     <li>
                         Attach your ending:
-                        <font color="black">APPLE</font> --> <font color="blue"> 66663aB7! </font>. This is your password!
+                        <font color="black">APPLE</font> --> <font color="blue"> 62847aB7! </font>. This is your password!
                     </li>
                 </ol>
             </div>
@@ -162,8 +167,8 @@
             <br>
             <button type="submit" class="btn btn-default" onclick="respond()" id = "bt">Click to verify</button>
             <button type="submit" class="btn btn-default" onclick="checker()" id = "btTest">Show me how to generate this password</button>
-            
-           
+
+
         </div><!-- /.container -->
 
         <!-- Bootstrap core JavaScript
