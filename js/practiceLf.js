@@ -27,15 +27,18 @@ function getChallenge(isFirst){
 
 function findAnswer(challenge, key, wildcard) {
   var answer = "";
+  var sum = 0;
   for (i = 0; i < challenge.length; i++) {
     var a = key.indexOf(challenge.charAt(i));
     if (a == -1) {
-      answer = answer + wildcard;
+      sum = sum + wildcard;
     } else {
       a = a + 1;
       a = a % 10;
-      answer = answer + a;
+      sum = sum + a;
     }
+    sum = sum % 10;
+    answer = answer + sum;
   }
   return answer;
 }
