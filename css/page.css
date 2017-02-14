@@ -10,3 +10,8 @@ table, th, td {
 footer {
     margin: 50px 0;
 }
+<style>
+  .bottom-three {
+     margin-bottom: 3cm;
+  }
+</style>
