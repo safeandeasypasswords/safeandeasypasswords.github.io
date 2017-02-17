@@ -61,6 +61,20 @@ function respond() {
     }
 }
 
+function findLetter(){
+    var word1 = document.getElementById("firstWord").value;
+    var word2 = document.getElementById("secoondWord").value;
+    var word3 = document.getElementById("thirdWord").value;
+    
+    var words = word1 + word2 + word3;
+    var wordsString = words.trim();
+    
+    for (i = 1; i < 11; i++) {
+        j = i % 10;
+       document.getElementById("letter" + j).value = wordsString.charAt(i-1);  
+    }
+}
+
 function showFields() {
   btn = document.getElementById("phraseBtn");
   btn.disabled = true;
