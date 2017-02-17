@@ -118,6 +118,7 @@ function boldKeyChar(i) {
   w3 += key.substring(i+1,key.length);
   document.getElementById("keyData").innerHTML = w3;
   prevAns = document.getElementById("inputBox").value;
+  console.log(prevAns);
   document.getElementById("inputBox").value = prevAns + key.substring(i,i+1);
   if(document.getElementById("inputBox").value == cResponse) {
       document.getElementById("inputBox").value += "aB7!";
