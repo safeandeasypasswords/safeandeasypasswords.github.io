@@ -111,6 +111,9 @@
                         Choose a random number between 0 and 9. This is going to be your wildcard. <br>
                         e.g. <font color="green">6</font>
                     </li>
+                    <li>
+                        Memorize the ending <font color="green"> aB$7 </font> (or one of your choice) <b> This is important to make all of your passwords meet the requriments for different websites</b>
+                    </li>
                 </ol>
                 <h4>Given a website name, e.g., <font color="black">APPLE</font>, generate your password as follows:</h4>
                 <ol>
@@ -123,7 +126,7 @@
                     <li>
                         Move on the the next letter.
                         If the letter is not found in your letter sequence, output the wildcard. Add this number to the last number and use this sum as the next character
-                        in your password. If the sum is 10 or more than 10, use the last digit.
+                        in your password. If the sum is 10 or more than 10, output the last digit.
                         <br>
                         <font color="black">P</font> --> <font color="blue">6</font>
                         <br>
@@ -134,19 +137,19 @@
                     <!-- If the letter is Y, wrap back to the first word; if the letter doesn't show up in your sequence of words, skip it. </li> -->
                     <li>
                         Repeat on the remaining letters of <font color="black">APPLE</font> till you reach the end.
-                        ( <font color="black">APPLE</font> --> <font color="blue">62847aB7!</font> )
+                        ( <font color="black">APPLE</font> --> <font color="blue">62847</font> )
                     </li>
 
                     <li>
                         Attach your ending:
-                        <font color="black">APPLE</font> --> <font color="blue"> 62847aB7! </font>. This is your password!
+                        <font color="black">APPLE</font> --> <font color="blue"> 62847aB$7 </font>. This is your password!
                     </li>
                 </ol>
             </div>
 
             <h4>Practice on Your Own!</h4>
 
-            <p>Enter your reponse below and make sure to append your string <b>(aB7!)</b> to the end of each response</p>
+            <p>Enter your reponse below and make sure to append your string <b>(aB$7)</b> to the end of each response</p>
             <div style="display: inline" id = "challengeDiv"></div>
             <h4 id = "challengeData"></h4>
             <h4 id = "keyData"></h4>
