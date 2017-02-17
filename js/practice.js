@@ -62,7 +62,7 @@ function animate() {
       (function(cTime,x) {
           setTimeout(
             function() { boldChallengeChar(x); },
-            1000 * (cTime)
+            500 * (cTime)
          );
       })(cTime,x);
 
@@ -77,7 +77,7 @@ function animateKey(index,pause) {
     (function(z,pause) {
         setTimeout(
            function() {italicsKeyChar(z)},
-           1000 * (z + pause)
+           500 * (z + pause)
        );
     })(z,pause);
   }
@@ -85,7 +85,7 @@ function animateKey(index,pause) {
 (function(index,pause) {
         setTimeout(
             function() { boldKeyChar(index); },
-           1000 * (index+ pause)
+           500 * (index+ pause)
         );
     })(index,pause);
 }
@@ -125,7 +125,7 @@ function boldKeyChar(i) {
 }
 function boldChallengeChar(i) {
   w2 = challenge.substring(0,i);
-    w2 += challenge.substring(i,i+1).bold();
+    w2 += challenge.substring(i,i+1).big();
     w2 += challenge.substring(i+1,challenge.length);
     document.getElementById("challengeData").innerHTML = w2;
 }
