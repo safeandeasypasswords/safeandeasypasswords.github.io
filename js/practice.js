@@ -26,7 +26,7 @@ function animate() {
       (function(cTime,x) {
           setTimeout(
             function() { boldChallengeChar(x); },
-            10000 * (cTime)
+            1000 * (cTime)
          );
       })(cTime,x);
 
