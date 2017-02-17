@@ -26,7 +26,7 @@ function animate() {
       (function(cTime,x) {
           setTimeout(
             function() { boldChallengeChar(x); },
-            5000 * (cTime)
+            10000 * (cTime)
          );
       })(cTime,x);
 
@@ -41,7 +41,7 @@ function animateKey(index,pause) {
     (function(z,pause) {
         setTimeout(
            function() {italicsKeyChar(z)},
-           500 * (z + pause)
+           100 * (z + pause)
        );
     })(z,pause);
   }
@@ -49,7 +49,7 @@ function animateKey(index,pause) {
 (function(index,pause) {
         setTimeout(
             function() { boldKeyChar(index); },
-           500 * (index+ pause)
+           100 * (index+ pause)
         );
     })(index,pause);
 }
