@@ -63,7 +63,7 @@ function respond() {
 
 function findLetter(){
     var word1 = document.getElementById("firstWord").value;
-    var word2 = document.getElementById("secoondWord").value;
+    var word2 = document.getElementById("secondWord").value;
     var word3 = document.getElementById("thirdWord").value;
     
     var words = word1 + word2 + word3;
