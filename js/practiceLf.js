@@ -71,7 +71,7 @@ function findLetter(){
     
     for (i = 1; i < 11; i++) {
         j = i % 10;
-       document.getElementById("letter" + j).value = wordsString.charAt(i-1);  
+       document.getElementById("letter" + j).value = wordsString.charAt(i-1).toUpperCase();  
     }
 }
 
