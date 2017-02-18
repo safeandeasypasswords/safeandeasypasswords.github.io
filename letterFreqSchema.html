@@ -184,9 +184,10 @@
                             <input type="text" maxlength="10" class="form-control" id="thirdWord" placeholder="word3">
                             <br>
                         </div>
-                         <button type="submit" class="btn btn-default" onclick="findLetter()" id = "wordBt">Submit my words</button>
+                         <button type="submit" class="btn btn-default" onclick="findLetter(); gid('userWords').style.display='block'"
+                                 id = "wordBt">Submit my words</button>
                     </li>
-                    <div>
+                    <div id="userWords" style="display: none">
                     <li>
                         Here is your map
                       
