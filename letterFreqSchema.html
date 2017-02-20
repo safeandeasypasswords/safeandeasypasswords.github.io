@@ -147,7 +147,7 @@
                     </li>
                 </ol>
             </div>
-
+            
             <h4 id="practice">Practice on Your Own!</h4>
 
             <p>Enter your reponse below and make sure to append your string <b>(aB7!)</b> to the end of each response</p>
@@ -160,7 +160,8 @@
             <br>
             <button type="submit" class="btn btn-default" onclick="respond()" id = "bt">Click to verify</button>
             <!-- <button type="submit" class="btn btn-default" onclick="checker()" id = "btTest">Show me how to generate this password</button> -->
-
+            
+            
             <h4> Generate your own key! </h4>
             <div id="enterPhrase" style="display: none">
                 <ol>
@@ -184,12 +185,16 @@
                             <input type="text" maxlength="10" class="form-control" id="thirdWord" placeholder="word3">
                             <br>
                         </div>
-                         <button type="submit" class="btn btn-default" onclick="findLetter(); document.getElementById('userWords').style.display = 'block';
-                                                                                document.getElementById('practice').style.display = 'none'"
+                         <button type="submit" class="btn btn-default" onclick="findLetter(); document.getElementById('userWords').style.display = 'block';"
                                  id = "wordBt">Submit my words</button>
                     </li>
+                    </ol>
+                </div>
+                    
+                    
                     <div id="userWords" style="display: none">
-                    <li>
+                    <ol>
+                        <li>
                         Here is your map
                       
                         <p><font color="green">
@@ -225,7 +230,6 @@
                     <li>
                         Use this letter to number mapping to answer the challenge <a href="#practice">above</a>.
                     </li>
-                    </div>
                 </ol>
 
             </div>
