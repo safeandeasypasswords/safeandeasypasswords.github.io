@@ -120,9 +120,9 @@ function clearTable(){
 
 function clearFields(){
     document.getElementById("consonants").value = "";
-    document.getElementById("word1").value = "";
-    document.getElementById("word2").value = "";
-    document.getElementById("word3").value = "";
+    document.getElementById("firstWord").value = "";
+    document.getElementById("secondWord").value = "";
+    document.getElementById("thirdWord").value = "";
 }
 
 function showFields() {
