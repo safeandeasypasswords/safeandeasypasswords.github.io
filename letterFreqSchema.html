@@ -28,7 +28,8 @@
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -61,8 +62,10 @@
                         e.g., <p><font color="green"> S T R D Y</font><br>
                     </li>
                     <!-- The words can be made-up, from other languages etc.</li> -->
-                    <!-- <li>Write down the letters A,B, ..., Z and mark off all letters that appear in your two words (letters not marked: B, C, F, J, K, M, Q, U, V, W, X, Z)</li > -->
-                    <!-- <li>Select a third word that contains many of the letters of the alphabet that aren't marked (i.e., not covered by the first two words) but might contain some that are marked (e.g., MUSICBOX)</li> -->
+                    <!-- <li>Write down the letters A,B, ..., Z and mark off all letters that appear in your two words
+                    (letters not marked: B, C, F, J, K, M, Q, U, V, W, X, Z)</li > -->
+                    <!-- <li>Select a third word that contains many of the letters of the alphabet that aren't marked
+                     (i.e., not covered by the first two words) but might contain some that are marked (e.g., MUSICBOX)</li> -->
                     <li>
                         Add the five vowels
                         e.g., <p><font color="green">A E I O U</font></p>
@@ -127,7 +130,8 @@
                     </li>
                     <li>
                         Move on the the next letter.
-                        If the letter is not found in your letter sequence (or if it's a number!), output the wildcard. Add this number to the last number and use this sum as the next character
+                        If the letter is not found in your letter sequence (or if it's a number!), output the wildcard.
+                        Add this number to the last number and use this sum as the next character
                         in your password. If the sum is 10 or more than 10, output the last digit.
                         <br>
                         <font color="black">P</font> --> <font color="blue">6</font>
@@ -136,7 +140,8 @@
                         <br>
                         <font color="black">12</font> --> <font color="blue">2</font>
                     </li>
-                    <!-- If the letter is Y, wrap back to the first word; if the letter doesn't show up in your sequence of words, skip it. </li> -->
+                    <!-- If the letter is Y, wrap back to the first word; if the letter doesn't show up in your sequence of words,
+                    skip it. </li> -->
                     <li>
                         Repeat on the remaining letters of <font color="black">APPLE</font> till you reach the end.
                         ( <font color="black">APPLE</font> --> <font color="blue">62847</font> )
@@ -160,14 +165,16 @@
             </div>
             <br>
             <button type="submit" class="btn btn-default" onclick="respond()" id = "bt">Click to verify</button>
-            <!-- <button type="submit" class="btn btn-default" onclick="checker()" id = "btTest">Show me how to generate this password</button> -->
+            <!-- <button type="submit" class="btn btn-default" onclick="checker()" id = "btTest">Show me how to generate
+             this password</button> -->
             
            
  
            
            
            <h4>Generate your own key! </h4>
-            <button type="submit" class="btn btn-default" onclick="document.getElementById('enterPhrase').style.display = 'block'" id = "phraseBtn">Click to choose new words!</button>
+            <button type="submit" class="btn btn-default" onclick="document.getElementById('enterPhrase').style.display = 'block'"
+                    id = "phraseBtn">Click to choose new words!</button>
             <div id="enterPhrase" style="display: none">
                 <ul>
                     <li>
@@ -178,7 +185,8 @@
                         <input type="text" class="form-control" maxlength= "10" placeholder="Enter your choices">
                     </li>
                     <li>
-                        Add the vowels (<font color="green"> A E I O U </font> ) and make 2-3 words (re-order the words the way you want).
+                        Add the vowels (<font color="green"> A E I O U </font> ) and make 2-3 words
+                        (re-order the words the way you want).
                         <br>
                         <div class = "col-xs-4">
                             <input type="text" maxlength="10" class="form-control" id="firstWord" placeholder="word1">
@@ -190,9 +198,9 @@
                             <input type="text" maxlength="10" class="form-control" id="thirdWord" placeholder="word3">
                             <br>
                         </div>
-                         <button type="submit" class="btn btn-default" onclick="findLetter(); document.getElementById('userWords').style.display = 'block';
-                                                                                "
-                                 id = "wordBt">Submit my words</button>
+                         <button type="submit" class="btn btn-default" onclick="findLetter();
+                         document.getElementById('userWords').style.display = 'block'; "
+                         id = "wordBt">Submit my words</button>
                     </li>
                     </ul>
                 </div>
@@ -233,7 +241,8 @@
                      </li>
                         
                     <li>
-                        Use this letter to number mapping to answer the challenge <button class="astext" onclick=" document.getElementById('enterPhrase').style.display = 'none'"> above</button>
+                        Use this letter to number mapping to answer the challenge <button class="astext"
+                        onclick=" document.getElementById('enterPhrase').style.display = 'none'"> above</button>
                         <!-- <a href="#practice">above</a>. -->
                     </li>
                 </ul>
