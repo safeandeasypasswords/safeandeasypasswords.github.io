@@ -118,6 +118,12 @@ function clearTable(){
     }
 }
 
+function clearFields(){
+    document.getElementById("consonants").value = "";
+    document.getElementById("word1").value = "";
+    document.getElementById("word2").value = "";
+    document.getElementById("word3").value = "";
+}
 
 function showFields() {
   btn = document.getElementById("phraseBtn");
