@@ -119,11 +119,7 @@ function clearTable(){
 }
 
 function clearFields(){
-    document.getElementById("consonant1").value = "";
-    document.getElementById("consonant2").value = "";
-    document.getElementById("consonant3").value = "";
-    document.getElementById("consonant4").value = "";
-    document.getElementById("consonant5").value = "";
+    document.getElementById("consonants").value = "";
     document.getElementById("firstWord").value = "";
     document.getElementById("secondWord").value = "";
     document.getElementById("thirdWord").value = "";
