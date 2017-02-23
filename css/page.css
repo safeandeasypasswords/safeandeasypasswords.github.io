@@ -14,4 +14,11 @@ footer {
 .bottom-one {
      margin-bottom: 3cm;
   }
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+}
+
 
