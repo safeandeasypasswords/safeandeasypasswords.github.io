@@ -78,10 +78,10 @@ function findAnswer(challenge, key, wildcard) {
   }
   return answer;
 }
-function respond(key) {
+function respond(phrase) {
   // var key = "DIESTARYOU";
   var wildcard = 6;
-  ansRight = findAnswer(challenge, key, wildcard);
+  ansRight = findAnswer(challenge, phrase, wildcard);
   ansRight = ansRight + "aB7!";
   var ansUser = document.getElementById("inputBoxLf").value;
   if(ansRight == ansUser) {
