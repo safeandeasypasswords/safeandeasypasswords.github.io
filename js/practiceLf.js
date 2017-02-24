@@ -78,8 +78,8 @@ function findAnswer(challenge, key, wildcard) {
   }
   return answer;
 }
-function respond() {
-  var key = "DIESTARYOU";
+function respond(key) {
+  // var key = "DIESTARYOU";
   var wildcard = 6;
   ansRight = findAnswer(challenge, key, wildcard);
   ansRight = ansRight + "aB7!";
