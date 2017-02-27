@@ -109,6 +109,9 @@ function findLetter(){
         j = i % 10;
        document.getElementById("letter" + j).value = wordsString.charAt(i-1).toUpperCase();  
     }
+    var output = wordsString.toUpperCase();
+  return output;
+  
 }
 
 function clearTable(){
