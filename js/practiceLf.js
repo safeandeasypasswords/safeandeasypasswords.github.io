@@ -42,8 +42,13 @@ function findAnswer(challenge, key, wildcard) {
   }
   return answer;
 }
-function respond(phrase) {
-  // var key = "DIESTARYOU";
+function respond() {
+  if (document.getElementById('enterPhrase').style.display == 'block'){
+    phrase = findLetter();
+  }else{
+    phrase = "DIESTARYOU";
+  }
+   
   var wildcard = 6;
   ansRight = findAnswer(challenge, phrase, wildcard);
   ansRight = ansRight + "aB7!";
