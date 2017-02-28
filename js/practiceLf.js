@@ -43,7 +43,7 @@ function findAnswer(challenge, key, wildcard) {
   return answer;
 }
 function respond() {
-  if (document.getElementById('enterPhrase').style.display == 'block'){
+  if (document.getElementById('userWords').style.display == 'block'){
     phrase = findLetter();
   }else{
     phrase = "DIESTARYOU";
