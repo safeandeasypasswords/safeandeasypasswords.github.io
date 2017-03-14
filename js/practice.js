@@ -85,7 +85,7 @@ function boldKeyChar(i) {
   console.log(prevAns);
   document.getElementById("inputBox").value = prevAns + key.substring(i,i+1);
   if(document.getElementById("inputBox").value == cResponse) {
-      document.getElementById("inputBox").value += "aB7!";
+      document.getElementById("inputBox").value += "B7!";
   }
 }
 function boldChallengeChar(i) {
@@ -95,7 +95,7 @@ function boldChallengeChar(i) {
     document.getElementById("challengeData").innerHTML = w2;
 }
 function emailUs() {
-    window.open('mailto:test@gatech.edu');
+    window.open('mailto:ssamadi6@gatech.edu');
 }
 function findNextLetter(index,key) {
   var isFound = false;
@@ -129,12 +129,12 @@ function findResponseLength(challenge,key) {
 }
 function getChallenge(isFirst){
     var index = Math.floor((Math.random() * siteNames.length - 1));
-    var challenges = siteNames[index].toUpperCase();
+    var challenges = siteNames[index];
     var text = document.createElement('P');
     text.innerHTML = "The challenge is <b>" + challenges +"</b>";
     if (isFirst == 1) {
         var prevResponse = document.createElement('P');
-        prevResponse.innerHTML = "The response was <b>" + cResponse + "aB7!</b>";
+        prevResponse.innerHTML = "The response was <b>" + cResponse + "B7!</b>";
         var prevChallenge = document.getElementById("challengeDiv").innerHTML;
         prevChallenge = prevChallenge.replace("is","was");
         document.getElementById("challengeDiv").innerHTML = prevChallenge;
@@ -151,7 +151,8 @@ function respond() {
       key = "computermoustachejellybox";
   } else {
     key = document.getElementById("firstWord").value +
-        document.getElementById("secondWord").value + document.getElementById("thirdWord").value;
+        document.getElementById("secondWord").value +
+        document.getElementById("thirdWord").value;
     key = key;
   }
   if(key == "") {
