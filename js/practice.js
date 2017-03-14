@@ -148,11 +148,11 @@ function getChallenge(isFirst){
 
 function respond() {
   if (document.getElementById("firstWord").value == "") {
-      key = "COMPUTERMOUSTACHEJELLYBOX";
+      key = "computermoustachejellybox";
   } else {
     key = document.getElementById("firstWord").value +
         document.getElementById("secondWord").value + document.getElementById("thirdWord").value;
-    key = key.toUpperCase();
+    key = key;
   }
   if(key == "") {
       alert("Please enter words");
