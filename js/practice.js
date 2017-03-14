@@ -150,7 +150,8 @@ function respond() {
   if (document.getElementById("firstWord").value == "") {
       key = "COMPUTERMOUSTACHEJELLYBOX";
   } else {
-    key = document.getElementById("firstWord").value + document.getElementById("secondWord").value + document.getElementById("thirdWord").value;
+    key = document.getElementById("firstWord").value +
+        document.getElementById("secondWord").value + document.getElementById("thirdWord").value;
     key = key.toUpperCase();
   }
   if(key == "") {
@@ -168,7 +169,7 @@ function respond() {
 
      uResponse +=  document.getElementById(("inputBox")).value;
 
-    if(uResponse.toUpperCase() == cResponse.toUpperCase() + "AB7!") {
+    if(uResponse.toUpperCase() == cResponse.toUpperCase() + "B7!") {
         alert("correct");
         //document.getElementById('bt').innerHTML = "Ready?";
         document.getElementById('inputBox').value = "";
@@ -176,8 +177,8 @@ function respond() {
         isEntered = false;
         getChallenge(1);
     } else {
-      alert("looking for " + cResponse + "aB7!" + " your response was " + uResponse);
-      document.getElementById("inputBox").value = cResponse + "aB7!";
+      alert("looking for " + cResponse + "B7!" + " your response was " + uResponse);
+      document.getElementById("inputBox").value = cResponse + "B7!";
     }
 
   //}
