@@ -15,6 +15,7 @@ function checker() {
     animate();
 }
 function animate() {
+  document.getElementById("inputBox").value = "";
   cTime = 0;
   boldChallengeChar(0);
   for(x = 0; x < challenge.length; x++) {
