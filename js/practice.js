@@ -32,7 +32,7 @@ function animate() {
       })(cTime,x);
 
       animateKey(resultIndex,cTime);
-      cTime += resultIndex+1;
+      cTime += resultIndex + 1;
     }
   }
 }
