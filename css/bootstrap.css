@@ -238,17 +238,6 @@ th {
   h3 {
     page-break-after: avoid;
   }
-  
-  
-  #containerB {
-            width: 600px;
-        }
-        
-  #containerB div {
-            float: left;
-            height: 250px;
-            width: 600px;
-  }
   .navbar {
     display: none;
   }
