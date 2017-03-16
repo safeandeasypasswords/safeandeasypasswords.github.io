@@ -1587,7 +1587,21 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  
 }
+ #containerB {
+            width: 600px;
+ }
+        
+ #containerB div {
+            float: left;
+            height: 250px;
+            width: 600px;
+ }
+        
+
+
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
