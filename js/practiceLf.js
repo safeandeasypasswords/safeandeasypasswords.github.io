@@ -25,23 +25,42 @@ function getChallenge(isFirst){
 }
 
 
+//function findAnswer(challenge, key, wildcard) {
+ //var answer = "";
+ //var sum = 0;
+ //for (i = 0; i < challenge.length; i++) {
+ // var a = key.indexOf(challenge.charAt(i));
+ //if (a == -1) {
+ // sum = sum + wildcard;
+ //} else {
+ // a = a + 1;
+ //a = a % 10;
+ //sum = sum + a;
+ //}
+ //sum = sum % 10
+ //answer = answer + sum;
+ //}
+ //return answer;
+//}
+
 function findAnswer(challenge, key, wildcard) {
   var answer = "";
   var sum = 0;
   for (i = 0; i < challenge.length; i++) {
     var a = key.indexOf(challenge.charAt(i));
     if (a == -1) {
-      sum = sum + wildcard;
+      sum = wildcard;
     } else {
       a = a + 1;
       a = a % 10;
-      sum = sum + a;
+      sum = a;
     }
-    sum = sum % 10;
     answer = answer + sum;
   }
   return answer;
 }
+
+
 function respond() {
   if (document.getElementById('userWords').style.display == 'block'){
     phrase = findLetter();
@@ -49,7 +68,7 @@ function respond() {
     phrase = "DIESTARYOU";
   }
    
-  var wildcard = 6;
+  var wildcard = 5;
   ansRight = findAnswer(challenge, phrase, wildcard);
   ansRight = ansRight + "aB!";
   var ansUser = document.getElementById("inputBoxLf").value;
