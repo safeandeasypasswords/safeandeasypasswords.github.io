@@ -51,7 +51,7 @@ function respond() {
    
   var wildcard = 6;
   ansRight = findAnswer(challenge, phrase, wildcard);
-  ansRight = ansRight + "aB7!";
+  ansRight = ansRight + "aB!";
   var ansUser = document.getElementById("inputBoxLf").value;
   if(ansRight == ansUser) {
         alert("correct");
