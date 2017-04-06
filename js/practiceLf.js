@@ -65,10 +65,10 @@ function respond() {
   if (document.getElementById('userWords').style.display == 'block'){
     phrase = findLetter();
   }else{
-    phrase = "DIESTARYOU";
+    phrase = "ASTORMDIEU";
   }
    
-  var wildcard = 5;
+  var wildcard = 3;
   ansRight = findAnswer(challenge, phrase, wildcard);
   ansRight = ansRight + "aB!";
   var ansUser = document.getElementById("inputBoxLf").value;
