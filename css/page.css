@@ -38,5 +38,11 @@ footer {
             cursor:pointer;
         }
 
+.pw {
+                font-family: monospace;
+                font-size: 140%;
+                font-weight: bold;
+            }
+
 
 
