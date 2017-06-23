@@ -187,6 +187,62 @@ function respond() {
 
 }
 
+
+function I_eval_1(){
+            
+            var guess1 = gname("I100").value.trim();
+            var guess2 = gname("I101").value.trim();
+            
+            
+            if(guess1 == "qjqdrB7!" && guess2 == "lnltgclqB7!"){
+                gid("I1_checkButton").style.display = 'none';
+                gid("I1_nextButton").style.display = 'block';
+                gname("I1_try").style.display = 'none';
+                // gname("I1_correct").style.display = 'block';
+                
+                
+                gid("I_hint100").style.display = 'block';
+                gid("I_hint100").innerHTML = "Correct!";
+                gid("I_hint100").style.color = "green";
+                
+                gid("I_hint101").style.display = 'block';
+                gid("I_hint101").innerHTML = "Correct!";
+                gid("I_hint101").style.color = "green";
+                
+                gid("ending").style.display = 'block';
+                gid("amazonhint").style.display = 'none'
+                
+            }else{
+                gid("I_hint100").style.display = 'block';
+                gid("I_hint101").style.display = 'block';
+                gname("I1_try").style.display = 'block';
+                gid("amazonhint").style.display = 'block'
+                
+                if(guess1 != "qjqdrB7!" && guess2 == "lnltgclqB7!"){
+                    gid("I_hint100").innerHTML = "Wrong!";
+                    gid("I_hint100").style.color = "red";
+                    
+                    gid("I_hint101").innerHTML = "Correct!";
+                    gid("I_hint101").style.color = "green";
+                }
+                if(guess1 == "qjqdrB7!" && guess2 != "lnltgclqB7!"){
+                    gid("I_hint100").innerHTML = "Correct!";
+                    gid("I_hint100").style.color = "green";
+                    
+                    gid("I_hint101").innerHTML = "Wrong!";
+                    gid("I_hint101").style.color = "red";
+                    
+                }
+                if (guess1 != "qjqdrB7!" && guess2 != "lnltgclqB7!") {
+                    gid("I_hint100").innerHTML = "Wrong!";
+                    gid("I_hint100").style.color = "red";
+                    
+                    gid("I_hint101").innerHTML = "Wrong!";
+                    gid("I_hint101").style.color = "red";
+                }
+            }
+        }
+
 function showFields() {
   btn = document.getElementById("phraseBtn");
   btn.disabled = true;
