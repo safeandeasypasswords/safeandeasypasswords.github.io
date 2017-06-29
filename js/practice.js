@@ -277,3 +277,26 @@ function assign_rand_letter(index){
             gname("map"+index).value=lmap[index];
             return;
         }
+
+
+function is_map_full(){
+            t=1;
+            for (i = 1; i < 21; i++) {
+                if(lmap[i]==null){
+                    t=0;
+                }
+                
+            }
+            
+            if(t==1){
+                // gid('words').style.display='block';
+                //set_mapping();
+                gname("map_not_full").style.display='none';
+                //saveLMapping();
+                // gid("mapEnding").style.display = 'block';
+            }else{
+                gname("map_not_full").style.display='block';
+            }
+        }
+
+
