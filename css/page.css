@@ -7,6 +7,7 @@ table, th, td {
     border: 1px solid green;
     padding: 5px;
 }
+
 footer {
     margin: 50px 0;
 }
@@ -75,6 +76,10 @@ input[type="text"] {
             -webkit-box-sizing:border-box;
             -moz-box-sizing: border-box;
             style="background-color:#FCF5D8;">
+        }
+
+.noBorderTable{
+           boder : 0;
         }
 
 
