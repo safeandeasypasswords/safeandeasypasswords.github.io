@@ -44,5 +44,29 @@ footer {
                 font-weight: bold;
             }
 
+.randomLetter {
+            display: inline-block;
+            border-style: solid;
+            border-color: #bbb #888 #666 #aaa;
+            border-width: 2px 3px 3px 2px;
+            width: 6em;
+            height: 1.5 em;
+            background-color: #FFFFF0;
+            line-height: 1.5;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 200;
+            cursor:pointer;
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+        }
+        
+        
+ .randomLetter:hover {
+            border-color: #666 #aaa #bbb #888;
+            border-width: 4px 3px 3px 4px;
+            color: #000;
+        }
+
 
 
