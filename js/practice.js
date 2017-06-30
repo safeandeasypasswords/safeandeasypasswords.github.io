@@ -290,13 +290,17 @@ function is_map_full(){
             }
             
             if(t==1){
-                // gid('words').style.display='block';
-                //set_mapping();
+                set_mapping();
                 gname("map_not_full").style.display='none';
                 //saveLMapping();
-                // gid("mapEnding").style.display = 'block';
             }else{
                 gname("map_not_full").style.display='block';
+            }
+        }
+
+function set_mapping(){
+            for(i=1;i<21;i++){
+                gname("lmap"+i).value=lmap[i];
             }
         }
 
