@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="http://www.gatech.edu/sites/all/themes/gt_tlw/favicon.ico">
-           
+
         <title>Passwords</title>
 
         <!-- Bootstrap core CSS -->
@@ -23,12 +23,15 @@
         <![endif]-->
     </head>
 
-    <body>
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation"> 
+    <body onload = "getChallenge(0)">
+        
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                         <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -45,24 +48,26 @@
                         <li><a href="feedback.html">Feedback</a></li>
                         <li><a href="chrome.html">Chrome Extension</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
-
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
 
-        <div class="container">
-            <div class = "top">
-                 <p>
-                    </br>
-                    </br>
-                    </br>
-                </p>
-                <span class = "intro"></span>
-               
-            </div>
 
-            <div class = "mainContent">
+        <div class="container">
+            <div class="starter-template">
+                
+                 <p>
+                   <br/>
+                   <br/>
+                 </p>
+                
+                <p> 
+                73% of online accounts are guarded by duplicate passwords.^1000<br>54% of people use 5 or fewer passwords across their entire online life.
+                In the past year, 2 out of every 5 people online had accounts hacked or passwords stolen.
+                Don't become a statistic Scroll down or click on a strategy to learn more.
+                </p>
+                <div class = "mainContent">
                 
    
                <p>If you are concerned about the security of your online data, we have a solution for you.
@@ -76,85 +81,21 @@
 
                 <p>To get started, click on a strategy from the navigation bar on the top of the screen.</p>
                 <p>If you are interested in the theory behind our strategies, click <a href = "http://www.cc.gatech.edu/~vempala/papers/phuspcs.pdf">here</a> to learn more.</p>
+                    </div>
+
+               
+                    
+               
             </div>
+
+            
         </div><!-- /.container -->
 
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="js/jquery.typewriter.min.js"></script>
-        <script src="js/typed.js"></script>
-        <script src = "http://code.jquery.com/color/jquery.color-2.1.0.js"></script>
-        <script>
-            $(function() {
-                $(".intro").typed({
-                    strings: ["73% of online accounts are guarded by duplicate passwords.^1000<br>54% of people use 5 or fewer passwords across their entire online life.^1000<br>In the past year, 2 out of every 5 people online had accounts hacked or passwords stolen.^1000<br> Don't become a statistic.<br>Scroll down or click on a strategy to learn more."],
-                    typeSpeed: 15,
-                    showCursor: true,
-                    // character for cursor
-                    cursorChar: "|",
-                });
-            });
-        </script>
-
-        <style type="text/css">
-            body {
-                padding-top: 100px;
-                background: linear-gradient( #000000 50%, #FFFFFF 50%);
-            }
-            @media (max-width: 990px) {
-            body {
-                padding-top: 150px;
-                }
-            }    
-            @media (max-width: 768px) {
-            body {
-                padding-top: 50px;
-                }
-            }
-            @media (max-width: 390px) {
-            body {
-                padding-top: 100px;
-                }
-            }
-            .top {
-                min-height: 100vh;
-            }
-            .intro {
-                color: green;
-                font-family: "Lucida Console", Monaco, monospace;
-                font-size: 150%;
-                height: 100vh;
-            }
-            .mainContent{
-                min-height: 100vh;
-                background: white;
-                font-family: Tahoma, Geneva, sans-serif;
-                font-size: 125%;
-            }
-            .typed-cursor{
-                opacity: 1;
-                -webkit-animation: blink 0.7s infinite;
-                -moz-animation: blink 0.7s infinite;
-                animation: blink 0.7s infinite;
-                color:green;
-            }
-            @keyframes blink{
-                0% { opacity:1; }
-                50% { opacity:0; }
-                100% { opacity:1; }
-            }
-            @-webkit-keyframes blink{
-                0% { opacity:1; }
-                50% { opacity:0; }
-                100% { opacity:1; }
-            }
-            @-moz-keyframes blink{
-                0% { opacity:1; }
-                50% { opacity:0; }
-                100% { opacity:1; }
-            }
-        </style>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/practice.js"></script>
     </body>
 </html>
