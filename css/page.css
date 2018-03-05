@@ -88,8 +88,12 @@ input[type="text"] {
 }
 
 nav {
-           font-size: 1.8em !important;     
+           font-size: 1.2em;     
     }
+
+.nav a{
+            font-size: 1.4em !important;
+        }
 
         
 
