@@ -90,8 +90,9 @@ input[type="text"] {
 }
 
 .intro{
-    width:500px;
+    width:700px;
     text-align: justify;
+    text-align: center;
 }
 
 nav {
