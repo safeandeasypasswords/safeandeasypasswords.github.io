@@ -90,8 +90,8 @@ input[type="text"] {
 }
 
 .intro{
-    width:700px;
-    text-align: justify;
+    /*width:700px; */
+    /* text-align: justify; */
     text-align: center;
     color:#800000
 }
