@@ -4,10 +4,6 @@ body {
 
 }
 
-P.special {
-    width:500px;
-    text-align: justify;
-}
 
 table, th, td {
     /* border: 1px solid green; */
@@ -91,6 +87,11 @@ input[type="text"] {
 
 .wrapper {
     text-align: center;
+}
+
+.intro{
+    width:500px;
+    text-align: justify;
 }
 
 nav {
